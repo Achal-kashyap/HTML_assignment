@@ -1,1 +1,1 @@
-# HTML_image_assignment
+# HTML_assignment
