@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    section {
+        margin-left: 20px;
+       padding-top: 20px;
+    }
+
+    fieldset {
+        border-radius: 15px;
+        background-color: rgb(248, 255, 255);
+        margin: 20px;
+        padding-left: 20px;
+    }
+
+    button {
+        box-sizing: content-box;
+        box-shadow: 10px;
+    }
+
+    .field {
+      color:aqua;
+      border-color: blue;
+    }
+    
+</style>
+<fieldset> <legend>Login to your account</legend><br>
+    <form action="/submit" method="post"
+      enctype="application/x-www-form-urlencoded">
+      <label for="">Username </label>
+  <input type="text" name="username"><br><br>
+  <label for="">E-mail </label> &nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="email" name="email" id="email"> <br><br>
+  <label for="">Password</label> &nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="password" name="email" id="email"> <br><br>
+  <button type="submit">Submit</button>
+<br><br>
+<h3>Select account type</h3>
+<form>
+<select name="cars" id="" style="margin-left: 5px;">
+  <option value="">Private</option>
+  <option value="">Public</option>
+</select>
+<br><br>
+<h4>Message for us- - -</h4>
+<textarea name="message" rows="3" cols="50">Enter text here...</textarea>
+</form>
+
+<p style="color: rgb(75, 75, 244); font-size: smaller;">Create a new account</p>
+ &nbsp;<img src="../images/logo.png" width="30px">
+ <input type="image" src="../images/logo.png" alt="Search" width="20" height="20>
+</fieldset>
+<br>
+<br><br>
+<fieldset>
+      <legend>Employee Details</legend><br>
+      <form>
+        <label>First Name:</label>&nbsp;<input type="text" id=""><br><br>
+        <label>Last Name:</label>&nbsp;<input type="text" id=""><br><br><br>
+        <input type="radio" id="male" name="subscribe" value="male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="subscribe" value="female" checked>
+<label for="female">Female</label><br><br>
+        <label>Employee id:</label>&nbsp;<input type="text" id=""><br><br>
+        <label>Designation:</label>&nbsp;<input type="text" id=""><br><br>
+         <label>Phone No:</label>&nbsp;<input type="text" id=""><br><br>
+         <button style="box-shadow: 10px;">Submit</button>
+      </form>
+</fieldset><br>
+<br><br>
+<select name="countries">
+  <optgroup label="Europe">
+    <option value="france">France</option>
+    <option value="germany">Germany</option>
+  </optgroup>
+  <optgroup label="Asia">
+    <option value="japan">Japan</option>
+  </optgroup>
+</select>
+<input type="checkbox" id="apple" name="fruits" value="apple" checked>
+<label for="apple">Apple</label>
+<input type="checkbox" id="banana" name="fruits" value="banana">
+<label for="banana">Banana</label>
+<input type="checkbox" id="Mango" name="fruits" value="Mango">
+<label for="banana">Mango</label>
+
+<form action="/submit" >
+  <input type="password" name="pass" id="feild">
+  <input type="date" value="submit">
+   <input type="email">
+  <button type="reset">Submit</button>
+ <input type="file" name="file">
+</form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            padding: 20px;
+        }
+        textarea {
+            border-radius: 10px;
+            border-width: 2px ;
+            padding-inline: 10px;
+        }
+    </style>
+    <h1>Resistration Form</h1>
+    <br>
+
+    <form action="">
+        <label for="first name">First Name:</label>
+        <input type="text" placeholder="Enter your first name"><br><br>
+        <label for="Last name">Last Name:</label>
+        <input type="text" placeholder="Enter your last name"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Enter your E-mail"><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass"><br>
+         <input type="radio" id="male" name="subscribe" value="male">
+           <label for="male">Male</label><br>
+        <input type="radio" id="female" name="subscribe" value="female" checked>
+           <label for="female">Female</label><br>
+        <input type="radio" id="others" name="subscribe" value="others" checked>
+           <label for="female">others</label><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" min="18" max="100">   
+        <br><br>
+        <label for="prefer">Prefernces:</label><br>
+       
+        <label for="apple">Acrylic Painting</label>
+        <input type="checkbox" id="Acry" name="acry" value="acry"><br>
+        <label for="banana">Oil Painting</label>
+         <input type="checkbox" id="oil" name="oil" value="oil"><br>
+        <label for="banana">water color Painting</label>
+        <input type="checkbox" id="water_c" name="water_c" value="water_c"><br>
+        <br>
+        <label for="occu">Select Occupation</label>
+        <select name="occupation">
+          <option value="stu">Student</option>
+          <option value="emp">Employee</option> 
+        </select>
+        <br><br>
+        <textarea name="message" rows="3" cols="50" id="">Share few lines about yourself...</textarea>
+        <br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <form action="https://lms.codinggita.in/student" autocomplete="on" method="get" target="_self">
+        <input type="email" value="Achal" size="10" maxlength="20" min="2" max="5" multiple>
+        <input type="number" max="2027-09-27" min="2026-07-26" name="" id="" step="3">
+        <input type="file" name="" id="" multiple >
+        <button>submit</button>
+       
+        
+    </form>
+
+    <form action="">
+        <input type="text" pattern="^[a-zA-Z]{5}">
+        <button>submit</button>
+    </form>
+</body>
+</html>

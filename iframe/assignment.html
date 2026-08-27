@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Iframe Exercises — Combined Reference</title>
+</head>
+<body>
+
+<h1>Iframe Exercises — Combined Reference</h1>
+<p>All 30 exercises together. Only permitted allow values used: fullscreen, gyroscope, usb.</p>
+
+<h2>1. Basic iframe — 100% width, height 400, no border</h2>
+<iframe src="https://www.codinggita.com" width="100%" height="400" title="Example Website Preview" frameborder="0"></iframe>
+
+<h2>2. Link that loads content into a named iframe</h2>
+<a href="https://www.codinggita.com" target="exampleFrame">Open codingita webSite</a>
+<iframe name="exampleFrame" src="about:blank" width="100%" height="300" title="Example Site Frame"></iframe>
+
+<h2>3. YouTube-style video embed</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iZTBo4RvoOo?si=9mQhPw0n5AIKSCer"
+  title="Sample YouTube Video" allow="fullscreen; gyroscope" allowfullscreen></iframe>
+
+<h2>4. Responsive iframe (full width, height 400)</h2>
+<iframe src="https://www.codinggita.com" width="100%" height="400" title="Responsive Example Site" frameborder="0"></iframe>
+
+<h2>5. Iframe requesting only fullscreen</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7332.552480534228!2d72.49679543616499!3d23.23303276839814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1787291746096!5m2!1sen!2sin" width="600" height="450" style="border:0; border-radius: 10px; align-items: center;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" width="800" height="450"
+  title="Interactive Map" allow="fullscreen"></iframe>
+
+<h2>6. Iframe requesting only gyroscope</h2>
+<iframe src="https://www.codinggita.com" width="100%" height="500"
+  title="Motion-Enabled Interactive Content" allow="gyroscope"></iframe>
+
+<h2>7. Iframe requesting only usb</h2>
+<iframe src="https://www.codinggita.com" width="600" height="400"
+  title="USB Device Configuration Panel" allow="usb"></iframe>
+
+<h2>8. Iframe combining all three permitted permissions</h2>
+<iframe src="https://www.codinggita.com/full-access-app" width="800" height="500"
+  title="Full-Access Interactive Application" allow="fullscreen; gyroscope; usb"></iframe>
+
+<h2>9. Two iframes side by side — fullscreen / gyroscope</h2>
+<iframe src="https://www.codinggita.com" width="48%" height="350" title="Fullscreen Content" allow="fullscreen"></iframe>
+<iframe src="https://www.codinggita.com" width="48%" height="350" title="Gyroscope Content" allow="gyroscope"></iframe>
+
+<h2>10. Navigation menu (3 links) + one shared named iframe</h2>
+<nav>
+  <a href="https://www.codinggita.com" target="contentFrame">Example.com</a> |
+  <a href="https://www.codinggita.com" target="contentFrame">IANA.org</a> |
+  <a href="https://www.codinggita.com" target="contentFrame">Wikipedia.org</a>
+</nav>
+<iframe name="contentFrame" src="https://www.codinggita.com" width="100%" height="400" title="Shared Content Frame"></iframe>
+
+<h2>11. Video-style iframe with fullscreen + gyroscope</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iZTBo4RvoOo?si=9mQhPw0n5AIKSCer"
+  title="Motion-Enabled Video Player" allow="fullscreen; gyroscope" allowfullscreen></iframe>
+
+<h2>12. Iframe with no allow attribute (most restrictive)</h2>
+<iframe src="https://www.codinggita.com" width="100%" height="300" title="Restricted Example Site Frame"></iframe>
+
+<h2>13. Fully responsive iframe (aspect-ratio preserved)</h2>
+<iframe src="https://www.codinggita.com" width="100%" height="400" title="Responsive Aspect-Ratio Frame" frameborder="0"></iframe>
+
+<h2>14. Heading + paragraph + two iframes (usb / fullscreen)</h2>
+<h3>Device Access Demonstration</h3>
+<p>This section demonstrates two iframes with different device-related permissions.</p>
+<iframe src="https://www.codinggita.com" width="600" height="350" title="USB Device Panel" allow="usb"></iframe>
+<iframe src="https://www.codinggita.com/fullscreen-demo" width="100%" height="450" title="Fullscreen Demo Panel" allow="fullscreen"></iframe>
+
+<h2>15. Fixed / completed code</h2>
+<iframe src="https://www.codingita.com" width="100%" height="400" allow="fullscreen; gyroscope; usb" title="Example Website Embed" frameborder="0"></iframe>
+
+<h2>16. Iframe with fullscreen + gyroscope access</h2>
+<iframe src="https://www.codinggita.com/interactive-demo" width="700" height="450"
+  title="Fullscreen Gyroscope Demo" allow="fullscreen; gyroscope" allowfullscreen></iframe>
+
+<h2>17. "Device control" style page (usb / gyroscope side by side)</h2>
+<iframe src="https://device.codinggita.com" width="45%" height="400" title="USB Control Panel" allow="usb"></iframe>
+<iframe src="https://www.example.com/motion-panel" width="45%" height="400" title="Gyroscope Control Panel" allow="gyroscope"></iframe>
+
+<h2>18. Minimal permissions, fullscreen only</h2>
+<iframe src="https://www.codinggita.com" width="100%" height="500" title="Minimal Permission Fullscreen Frame" allow="fullscreen"></iframe>
+
+<h2>19. Comparison: allow="fullscreen" vs no allow</h2>
+<iframe src="https://www.codinggita.com" width="500" height="350" title="With Fullscreen Permission" allow="fullscreen"></iframe>
+<iframe src="https://www.codinggita.com" width="500" height="350" title="Without Any Permission"></iframe>
+
+<h2>20. Styled iframe request (gyroscope only, fixed height 420)</h2>
+<iframe src="https://www.codingita.com/motion-demo" width="100%" height="420" title="Styled Gyroscope Frame" allow="gyroscope" frameborder="0"></iframe>
+
+<h2>21. Button-like link loading content into a USB iframe</h2>
+<a href="https://device.codinggita.com" target="myDeviceFrame">Load Device Panel</a>
+<iframe name="myDeviceFrame" src="about:blank" width="100%" height="400" title="USB Device Frame" allow="usb"></iframe>
+
+<h2>22. Iframe combining fullscreen + usb only</h2>
+<iframe src="https://device.codinggita.com/fullscreen-panel" width="700" height="450" title="Fullscreen USB Panel" allow="fullscreen; usb" frameborder="0"></iframe>
+
+<h2>23. Responsive "video player" iframe with gyroscope (16:9)</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iZTBo4RvoOo?si=9mQhPw0n5AIKSCer"
+  title="Responsive Gyroscope Video Player" allow="fullscreen; gyroscope" allowfullscreen></iframe>
+
+<h2>24. Three iframes: fullscreen / gyroscope / usb — different sizes</h2>
+<iframe src="https://www.codinggita.com/fs" width="600" height="300" title="Fullscreen Only Frame" allow="fullscreen"></iframe>
+<iframe src="https://www.codinggita.com/gyro" width="500" height="350" title="Gyroscope Only Frame" allow="gyroscope"></iframe>
+<iframe src="https://device.codinggita.com" width="400" height="400" title="USB Only Frame" allow="usb"></iframe>
+
+<h2>25. Header + large iframe (all three permissions)</h2>
+<header><h3>My App</h3></header>
+<iframe src="https://www.codinggita.com/full-access-app" width="100%" height="600"
+  title="Full Access Application" allow="fullscreen; gyroscope; usb"></iframe>
+
+<h2>26. Corrected code (only permitted values used)</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  allow="fullscreen" title="Video" allowfullscreen></iframe>
+
+<h2>27. List of links loading into one fullscreen-only iframe</h2>
+<ul>
+  <li><a href="https://www.example.com" target="sharedFrame">Example.com</a></li>
+  <li><a href="https://www.iana.org" target="sharedFrame">IANA.org</a></li>
+  <li><a href="https://www.wikipedia.org" target="sharedFrame">Wikipedia.org</a></li>
+</ul>
+<iframe name="sharedFrame" src="https://www.codinggita.com" width="100%" height="400" title="Shared Fullscreen Frame" allow="fullscreen"></iframe>
+
+<h2>28. Card-style iframe (gyroscope only, centered)</h2>
+<iframe src="https://www.codinggita.com/motion-demo" width="90%" height="400" title="Card-Styled Gyroscope Frame" allow="gyroscope" frameborder="0"></iframe>
+
+<h2>29. Two versions side by side (differing allow values)</h2>
+<iframe src="https://www.codinggita.com" width="400" height="300" title="Version A: Fullscreen Only" allow="fullscreen"></iframe>
+<iframe src="https://www.codinggita.com" width="400" height="300" title="Version B: All Permissions" allow="fullscreen; gyroscope; usb"></iframe>
+
+<h2>30. Complete best-practice document (3 iframes)</h2>
+<p>Standard webpage embed — no special browser permissions required.</p>
+<iframe src="https://www.codinggita.com" width="100%" height="300" title="Standard Webpage Embed"></iframe>
+
+<p>Video content — needs fullscreen for expanded viewing and gyroscope for motion-based interaction.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="Interactive Video with Motion Support" allow="fullscreen; gyroscope" allowfullscreen></iframe>
+
+<p>Device configuration tool — requires usb to communicate with a connected hardware device.</p>
+<iframe src="https://device.codinggita.com" width="600" height="400" title="USB Device Configuration Tool" allow="usb"></iframe>
+
+</body>
+</html>
