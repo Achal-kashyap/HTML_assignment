@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #1e1e2f;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .menu {
+            list-style: none;
+        }
+
+        .menu li {
+            margin: 15px 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 12px 15px;
+            border-radius: 8px;
+        }
+
+        .menu a:hover {
+            background-color: #44445f;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 40px;
+        }
+
+        .content h1 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <aside class="logo">My Website</aside>
+
+        <ul class="menu">
+            <li><a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;<span>Home</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chart-line"></i>&nbsp;&nbsp;<span>Dashboard</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<span>Profile</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-folder"></i>&nbsp;&nbsp;<span>Projects</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-list-check"></i>&nbsp;&nbsp;<span>Tasks</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-message"></i>&nbsp;&nbsp;<span>Messages</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;<span>Notifications</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;<span>Settings</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question"></i>&nbsp;&nbsp;<span>Help</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;&nbsp;<span>Logout</span></a></li>
+        </ul>
+    </aside>
+
+
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content area.</p>
+    </div>
+
+</body>
+</html>
