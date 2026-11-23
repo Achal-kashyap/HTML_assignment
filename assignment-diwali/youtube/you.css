@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 240px 1fr 180px;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    background: #242424;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.search {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border: 1px solid #444;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search input {
+    flex: 1;
+    min-width: 0;
+    padding: 0 15px;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search button {
+    width: 65px;
+    background: #272727;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
+
+.sidebar {
+    padding: 12px;
+    background: #1e1e1e;
+    border: 1px solid rgb(51, 51, 51);
+}
+
+.sidebar div {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 14px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sidebar div:hover {
+    background: #272727;
+}
+
+.sidebar i {
+    width: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sidebar hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 12px 0;
+}
+
+.sidebar h3 {
+    padding: 12px;
+    font-size: 16px;
+}
+
+.sidebar h3 i {
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.main {
+    min-width: 0;
+    padding: 12px 20px;
+    border-top: 1px solid #222;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 50px 100px 100px 100px 100px 150px ;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.categories button {
+    background: #272727;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.categories button:first-child {
+    background: white;
+    color: black;
+}
+
+.categories button:hover {
+    background: #262626;
+}
+
