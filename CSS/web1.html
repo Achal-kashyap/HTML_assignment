@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Navbar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: rgb(30, 2, 53);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none ;
+            gap: 30px;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            background-color: white;
+            width: 150px;
+            box-shadow: 1;
+            box-shadow: 5px 5px 10px gray;
+        }
+        .dropdown li {
+            padding: 12px;
+        }
+
+        .dropdown li a {
+            color: rgb(0, 0, 0);
+        }
+
+        .menu:hover .dropdown {
+            display: block;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border-color: rgb(40, 40, 41);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            MyWebsite
+        </div>
+        <ul>
+            <li>
+                 <a href="#">Home</a>
+             </li>
+             <li class="menu">
+                 <a href="#">Services ▼</a>
+         <ul class="dropdown">
+             <li><a href="#">Web Development</a></li>
+             <li><a href="#">Design</a></li>
+             <li><a href="#">SEO</a></li>
+         </ul>
+     </li>            
+     <li class="menu">
+         <a href="#">Products ▼</a>            
+         <ul class="dropdown">
+             <li><a href="#">Laptop</a></li>
+             <li><a href="#">Mobile</a></li>
+             <li><a href="#">Accessories</a></li>
+         </ul>            
+     </li>
+     <li>
+         <a href="#">About</a>
+     </li>
+         <a href="#">Contact</a>
+     </li>
+        </ul>
+        <button>Login</button>
+    </nav>
+</body>
+</html>

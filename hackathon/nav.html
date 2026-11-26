@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            height: 45px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 1px 1px 10px 1px gray;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links.active {
+            background: #050505;
+            color: white;
+            border: none;
+        }
+        
+        .nav-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 12px;
+            display: flex;
+            gap: 5px;
+            border: 0px solid black;
+            padding: 5px 15px 5px 15px;
+            box-shadow: 0px 0px 4px 0px gray;
+            border-radius: 20px;
+        }
+    
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .icon-btn {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid #eeeeee;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
+
+        .icon-btn i {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .profile {
+            height: 33px;
+            padding: 3px 12px 3px 5px;
+            border-radius: 25px;
+            background: white;
+            border: 1px solid #eeeeee;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .profile-img {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #ddd;
+        }
+
+        .profile-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .profile-text strong {
+            font-size: 8px;
+            color: #444;
+        }
+
+        .profile-text span {
+            font-size: 7px;
+            color: #48a868;
+        }
+
+        .profile i {
+            font-size: 8px;
+            color: #777;
+        }
+        
+
+        
+    </style>
+   
+</head>
+<body>
+    <nav class="navbar">
+        <div><p style="font-size: 20px;">eventhive<b style="color: #D4AF37;">.in</b></p></p><p style="color: #D4AF37; font-size: 9px; font-family: Space Grotesk, sans-serif;"><b>SWAMINARAYAN UNIVERSITY</b></p></div>
+        <div class="nav-links">
+            <div class="nav-links.active"><a href=""><i class="fa-solid fa-house"></i>Home</a></div>
+            <a href=""><i class="fa-solid fa-compass"></i>Explore</a>
+            <a href=""><i class="fa-solid fa-calendar"></i>Thanganat 5.0</a>
+            <a href=""><i class="fa-solid fa-ticket-simple"></i>My Passes</a>
+            <a href=""><i class="fa-regular fa-bookmark"></i>Wishlist</a>
+        </div>
+        <div class="right">
+             <div class="icon-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="icon-btn">
+                <i class="fa-regular fa-moon"></i>
+            </div>
+
+            <div class="icon-btn">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="profile">
+                <div class="profile-img"></div>
+                <div class="profile-text">
+                    <strong>Shivam Tripathi</strong>
+                    <span>Student</span>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+
+    </nav>
+</body>
+</html>

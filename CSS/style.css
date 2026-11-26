@@ -1,0 +1,53 @@
+h1{
+    font-size: 50px;
+    color: brown;
+    align-items: center;
+    background-color: #ed7171;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(../images/car.jpg);
+    background-size: 300px 300px;
+    background-position: center;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid rgb(237, 32, 32);
+    background-repeat: no-repeat;
+    filter: blur(0.5px);
+    background-size: cover;
+    background-position: top 20px right 20px bottom 20px left 20px;
+    background-attachment: scroll;
+}
+p{
+    font-size: 20px;
+    color: rgb(104, 23, 57);
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 10px rgb(255, 255, 255);
+}
+.overflow{
+    height: 300px;
+    border: 10px dashed black;
+    overflow: auto;
+    width: 800px;
+    padding: 20px;
+    background-image: url(../images/car4.jpg);
+    background-attachment: scroll;
+    margin: auto;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-clip: padding-box;
+}
+.h1_over{
+   background-color: transparent;
+}
+.revise {
+  background: #ffffff url('../images/car3.jpg') center center/cover fixed;
+  /* Color, image, position/size, repeat, attachment, origin, clip */
+  height: 600px;
+  overflow: auto;
+}

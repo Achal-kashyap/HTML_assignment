@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #961b9a; /* Purple background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Titles */
+.top-title,
+.bottom-title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.top-title {
+  margin-bottom: 30px;
+}
+
+.bottom-title {
+  margin-top: 30px;
+}
+
+/* Grid Layout */
+.cards-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+  background-color: #f7f3f9;
+  border-radius: 8px;
+  padding: 30px 20px 25px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' class='icon' version='1.1' xmlns='http://www.w3.org/2000/svg' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M960.1 258.4H245.8l-36.1-169H63.9v44h110.2l26.7 125 100.3 469.9 530 0.4v-44l-494.4-0.3-22.6-105.9H832l128.1-320.1z m-65 44L855.6 401H276.3l-21.1-98.6h639.9zM304.8 534.5L279.7 417h569.5l-47 117.5H304.8z' fill='%2339393A'%3E%3C/path%3E%3Cpath d='M375.6 810.6c28.7 0 52 23.3 52 52s-23.3 52-52 52-52-23.3-52-52 23.3-52 52-52m0-20c-39.7 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.3-72-72-72zM732 810.6c28.7 0 52 23.3 52 52s-23.3 52-52 52-52-23.3-52-52 23.3-52 52-52m0-20c-39.7 0-72 32.2-72 72s32.2 72 72 72c39.7 0 72-32.2 72-72s-32.3-72-72-72zM447.5 302.4h16v232.1h-16zM652 302.4h16v232.1h-16z' fill='%23E73B37'%3E%3C/path%3E%3Cpath d='M276.3 401l3.4 16-3.4-16z' fill='%23343535'%3E%3C/path%3E%3C/g%3E%3C/svg%3E")10 10,pointer;
+
+}
+
+/* Circular Image Box with Border */
+.img-box {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #a624aa;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Profile Details */
+.name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.stars {
+  color: #9f24aa;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.stars i {
+  margin: 0 1px;
+}
+
+.description {
+  color: #555555;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #9a1b78;
+  border: 1.5px solid #d99ddb;
+}
+
+.btn-outline:hover {
+  background-color: #f0e6f6;
+}
+
+.btn-filled {
+  background-color: #a21f63;
+  color: #ffffff;
+  border: 1.5px solid #7b1fa2;
+}
+
+.btn-filled:hover {
+  background-color: #6a1b9a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .top-title,
+  .bottom-title {
+    font-size: 2rem;
+  }
+}
+.btn2{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.hat{
+     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' class='icon' version='1.1' xmlns='http://www.w3.org/2000/svg' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M960.1 258.4H245.8l-36.1-169H63.9v44h110.2l26.7 125 100.3 469.9 530 0.4v-44l-494.4-0.3-22.6-105.9H832l128.1-320.1z m-65 44L855.6 401H276.3l-21.1-98.6h639.9zM304.8 534.5L279.7 417h569.5l-47 117.5H304.8z' fill='%2339393A'%3E%3C/path%3E%3Cpath d='M375.6 810.6c28.7 0 52 23.3 52 52s-23.3 52-52 52-52-23.3-52-52 23.3-52 52-52m0-20c-39.7 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.3-72-72-72zM732 810.6c28.7 0 52 23.3 52 52s-23.3 52-52 52-52-23.3-52-52 23.3-52 52-52m0-20c-39.7 0-72 32.2-72 72s32.2 72 72 72c39.7 0 72-32.2 72-72s-32.3-72-72-72zM447.5 302.4h16v232.1h-16zM652 302.4h16v232.1h-16z' fill='%23E73B37'%3E%3C/path%3E%3Cpath d='M276.3 401l3.4 16-3.4-16z' fill='%23343535'%3E%3C/path%3E%3C/g%3E%3C/svg%3E")10 10,pointer;
+}
+table,td,th{
+  border: 1px solid black;
+}
+table{
+  border-collapse: collapse;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  vertical-align: middle;
+}

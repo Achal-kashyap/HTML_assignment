@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.container-top {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 80px;
+
+    border: 1.5px solid rgb(250, 190, 12);
+    border-radius: 7px;
+
+    padding: 0 20px;
+
+    box-shadow: 0px 5px 5px rgb(206, 206, 205);
+}
+
+
+/* LEFT NAV */
+
+.left-nav nav {
+    display: flex;
+    gap: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/* CENTER LOGO */
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* RIGHT NAV */
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right-nav nav {
+    display: flex;
+    gap: 30px;
+}
+
+.img2 {
+    width: 25px;
+    height: 25px;
+}
+
+.img3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    width: 100%;
+    height: 610px;
+
+    display: flex;
+
+    margin-top: 0;
+}
+
+
+/* LEFT SIDE */
+
+.hero-left {
+    width: 50%;
+
+    background-color: #dff6f8;
+
+    padding: 55px 80px;
+}
+
+.hero-left p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.hero-left h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 78px;
+    font-weight: 400;
+
+    line-height: 1.02;
+
+    color: #111;
+}
+
+.hero-left button {
+    margin-top: 45px;
+
+    padding: 14px 22px;
+
+    background-color: #222;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.hero-left button:hover {
+    background-color: #444;
+}
+
+
+/* RIGHT IMAGE */
+
+.hero-right {
+    width: 50%;
+    height: 610px;
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ================= WHAT WE DO ================= */
+
+.what-we-do {
+    text-align: center;
+
+    padding: 70px 20% 60px;
+}
+
+.what-we-do h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 58px;
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+.what-we-do p {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #333;
+}

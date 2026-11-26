@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*         
+body {
+    background: #f9f6f6;
+}*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(2,100px);
+    /* grid-template-areas:
+        "sidebar header header"
+        "sidebar main footer"
+        "sidebar main footer2";
+    gap: 10px; */
+    /* justify-items:center;
+    align-items: end; */
+    /* place-content: space-between space; */
+
+}
+ /* .grid {
+    display: grid;
+    grid-template:
+        "sidebar header header"200px
+        "sidebar main footer"200px
+        "sidebar main footer2"200px/
+        20%;
+    gap: 10px;
+}*/
+/* 
+ .grid {
+    display: grid;
+    grid-template:
+        "header header"20%  
+        "main sidebar"60%
+        "footer sidebar"200px/
+        80% 20% 20%;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* justify-content: start; */
+    /* justify-items: center;
+    align-items: end;
+} */
+
+
+.header {
+    grid-area: header;
+    border: 1px solid rgb(0, 0, 0);
+}
+/* 
+.sidebar {
+    grid-area: sidebar; 
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.main {
+    grid-area: main;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.footer {
+    grid-area: footer;
+    border: 1px solid rgb(0, 0, 0);
+}
+.footer2 {
+    grid-area: footer2;
+    border: 1px solid rgb(16, 14, 14);
+} */
+
+    </style>
+</head>
+<body>
+
+<div class="grid">
+    <div class="header">header</div>
+    <!-- <div class="sidebar">side</div>
+    <div class="main">main</div>
+    <div class="footer">footer</div>
+    <div class="footer2">footer</div> -->
+    <div class="header">header</div>
+    <div class="header">header</div><div class="header">header</div>
+    <div class="header">header</div><div class="header">header</div>
+    <div class="header">header</div>
+    <div class="header">header</div>
+</div>
+<!-- 
+<div class="grid">
+    <div class="header">header</div>
+    <div class="main">main</div>
+    <div class="sidebar">side</div>
+    <div class="footer2">footer</div>
+    <div class="footer">footer</div>
+</div> -->
+</body>
+</html>

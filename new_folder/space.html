@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar System</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(circle, #10182e, #02040c 75%);
+}
+
+.solar {
+    position: relative;
+    width: 650px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+.sun {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #fff7b2, #ffae00 45%, #f04400);
+    box-shadow: 0 0 25px #dd8603, 0 0 60px #ff660077;
+    position: absolute;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid #ffffff30;
+    border-radius: 50%;
+    animation: rotate linear infinite;
+}
+
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: inset -5px -4px 7px #0009, inset 2px 2px 4px #ffffff44;
+}
+
+.mercury-orbit {
+    width: 100px;
+    height: 100px;
+    animation-duration: 4s;
+}
+
+.mercury {
+    width: 9px;
+    height: 9px;
+    background: radial-gradient(circle at 30% 30%, #ddd, #777);
+}
+
+.venus-orbit {
+    width: 150px;
+    height: 150px;
+    animation-duration: 7s;
+}
+
+.venus {
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(circle at 30% 30%, #ffe5a3, #bd762b);
+}
+
+.earth-orbit {
+    width: 205px;
+    height: 205px;
+    animation-duration: 10s;
+}
+
+.earth {
+    width: 17px;
+    height: 17px;
+    background: radial-gradient(circle at 30% 30%, #a9f5ff, #1685dc 50%, #07336c);
+}
+
+.mars-orbit {
+    width: 260px;
+    height: 260px;
+    animation-duration: 14s;
+}
+
+.mars {
+    width: 13px;
+    height: 13px;
+    background: radial-gradient(circle at 30% 30%, #ffc19a, #d44828);
+}
+
+.jupiter-orbit {
+    width: 340px;
+    height: 340px;
+    animation-duration: 19s;
+}
+
+.jupiter {
+    width: 28px;
+    height: 28px;
+    background: repeating-linear-gradient(0deg, #b47750 0 4px, #f0d1a3 5px 8px);
+}
+
+.saturn-orbit {
+    width: 420px;
+    height: 420px;
+    animation-duration: 25s;
+}
+
+.saturn {
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(circle at 30% 30%, #fff0bb, #b99a60);
+}
+
+.saturn::after {
+    position: absolute;
+    width: 38px;
+    height: 12px;
+    top: 6px;
+    left: -7px;
+    border: 3px solid #d8c18a;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+}
+
+.uranus-orbit {
+    width: 510px;
+    height: 510px;
+    animation-duration: 32s;
+}
+
+.uranus {
+    width: 19px;
+    height: 19px;
+    background: radial-gradient(circle at 30% 30%, #d8ffff, #56cbd8);
+}
+
+.neptune-orbit {
+    width: 600px;
+    height: 600px;
+    animation-duration: 40s;
+}
+
+.neptune {
+    width: 19px;
+    height: 19px;
+    background: radial-gradient(circle at 30% 30%, #a8caff, #234bd0);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 700px) {
+    .solar {
+        transform: scale(0.56);
+    }
+}
+</style>
+</head>
+<body>
+<div class="solar">
+    <div class="sun"></div>
+
+    <div class="orbit mercury-orbit">
+        <div class="planet mercury"></div>
+    </div>
+
+    <div class="orbit venus-orbit">
+        <div class="planet venus"></div>
+    </div>
+
+    <div class="orbit earth-orbit">
+        <div class="planet earth"></div>
+    </div>
+
+    <div class="orbit mars-orbit">
+        <div class="planet mars"></div>
+    </div>
+
+    <div class="orbit jupiter-orbit">
+        <div class="planet jupiter"></div>
+    </div>
+
+    <div class="orbit saturn-orbit">
+        <div class="planet saturn"></div>
+    </div>
+
+    <div class="orbit uranus-orbit">
+        <div class="planet uranus"></div>
+    </div>
+
+    <div class="orbit neptune-orbit">
+        <div class="planet neptune"></div>
+    </div>
+</div>
+</body>
+</html>

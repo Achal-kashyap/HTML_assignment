@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section {
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <form action="" enctype="application/x-www-form-urlencoded" id="form1">
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" autofocus required size="15" placeholder="Enter your name..." autocomplete>
+        <label for="age">Enter your age</label>
+        <input type="number" id="age" step="2" height="10px" width="20px" multiple min="10" max="100">
+        <input type="text" placeholder="disabled" disabled>
+
+        <label for="username">Username</label>
+        <input type="text" autocomplete>
+        <button>Submit</button>
+    </form>
+    <br><br>
+    <input type="text" name="username" form="form1">
+    <form action="" enctype="application/x-www-form-urlencoded">
+        <input type="file" accept=".jpg, .png ">
+    </form> 
+</body>
+</html>

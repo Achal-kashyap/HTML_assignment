@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Travel - Must See Places</title>
 <style>
-  * {
+  /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,7 +35,7 @@
   }
 
   /* NAVBAR */
-  .navbar {
+  /* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,8 +73,8 @@
   }
 
   .text-block {
-    flex: 1;
-    min-width: 280px;
+    flex: 1; */
+    /* min-width: 280px;
   }
 
   .text-block h1 {
@@ -210,13 +210,40 @@
 
   .arrows button:hover {
     background: #eee;
+  } */
+
+  .float-cont{
+    border: 5px solid black;
+    height: 400px;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px gray;
+  }
+  .float-cont img{
+    float: right;
+  }
+  .para-2{
+    clear: both;
+  }
+
+@media all and (max-width:576px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+    
   }
 </style>
 </head>
 
 <body>
 
-<div class="page">
+<!-- <div class="page">
 
   <div class="navbar">
     <div class="logo">Travel.</div>
@@ -275,6 +302,19 @@
       </div>
     </div>
   </div>
+</div> -->
+
+<div class="float-cont">
+  <img src="../logo.png" alt="">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, molestias minima nesciunt cupiditate voluptatum tempora, culpa quae deleniti ut quibusdam quas accusamus alias cum. Optio rerum culpa fugiat hic cupiditate, sunt at maxime laboriosam nesciunt numquam amet totam voluptatibus quisquam quod! Exercitationem ipsum aperiam ratione voluptas nulla expedita aliquam nisi!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sint?</p>
+  <h1>Lorem, ipsum dolor.</h1>
+  <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong> Rerum distinctio recusandae</strong> aut quia pariatur voluptate, molestiae vitae facere? Ad doloribus praesentium est, perferendis laborum consequuntur at sit maiores numquam nemo, amet culpa, eos debitis facere in cum dolor animi dicta?</blockquote>
+  <hr> 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae obcaecati a saepe unde quaerat nemo eveniet quae aperiam non. Veniam?
+  </p>
+  <p class="para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque numquam quod, dicta error laudantium assumenda aperiam nemo nesciunt officiis ullam, eos iusto beatae veritatis voluptatibus voluptates expedita accusamus consectetur neque sint facere dolores eligendi similique. Impedit cum possimus neque quis accusamus? Iusto alias recusandae nulla doloribus sint obcaecati rem! Ipsa.</p>
 </div>
+<div style="width: 75vw; height: 50px; background-color: lightgray; font-size: 1.5rem; padding: 1.3rem;"><div style="height: 50%; width: 50%; border: 1px solid black; min-width: 20%; max-width: 60%;"></div>div>lorem ipsum dolor sit amet</div>
 </body>
 </html>

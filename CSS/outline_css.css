@@ -1,0 +1,114 @@
+.card {
+    width: 520px;
+    height: 750px;
+    padding: 0px;
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    /* background: radial-gradient(circle, #ddedff 0%, #a9c9f1 50%, #62a6ee 100%);*/
+    margin: auto;
+    overflow: hidden;
+}
+.photo-card{
+    background-color: #8aa9ff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 60px;
+    clip-path:
+}
+img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 6px solid #5b83f3;
+    outline: 6px solid white;
+}
+img:hover{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+/* .second-section{
+    border-radius: 20px;
+    border: 1px solid black;
+} */
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+p{
+    text-align: center;
+    font-size: larger;
+    color: #7c7c7c;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+.btn{
+    display: block;
+    margin: 35px auto 15px;
+    padding: 15px 55px;
+    border: none;
+    border-radius: 20px;
+    background-color: #006dcc;
+    color: #dce4f7;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #01447e;
+    color: #dce4f7;
+    padding: 18px 58px; 
+}
+.card-header::before,
+.card-header::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; /* Jitna bada curve chahiye, utni negative value */
+  right: 0;
+  height: 40px;
+  width: 40px;
+}
+
+/* Ye bottom-right ke niche ek blue square banayega */
+.card-header::before {
+  background-color: #3b5998; /* Header wala same blue color */
+}
+
+/* Ye white square us blue shape ko kaat kar smooth curve banayega */
+.card-header::after {
+  background-color: #fff; /* Apne card ke background wala (White) color rakhein */
+  border-radius: 40px 0 0 0; /* Iska top-left corner round hoga */
+}
+
+.decoration{
+    text-decoration: none;
+}
+a:link{
+    color:#006dcc;
+}
+a:visited{
+    color:rgb(230, 123, 123)
+}
+a:hover{
+    color: #000000;
+    font-size: 50px;
+    cursor: url("logo1.png"), pointer;
+    padding: 10px;
+}
+.img{
+    width: 12px;
+    height: 12px;
+}
+
+body{
+    cursor: url("logo2.png"), auto;
+}
+
+.list{
+    list-style-image: url("logo1.png");
+}
