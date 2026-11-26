@@ -1,38 +1,38 @@
-const heading = document.getElementById("heading");
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const btn3 = document.getElementById("btn3");
-// const output = document.getElementsByID("output");
-const btn4= document.querySelector("#btn4");
-const btn5= document.querySelectorAll(".meow")
-const btn6= document.querySelector(".new")
+  // let score = 0;
 
+  //       let btn = document.getElementById("clickBtn");
+  //       let reset = document.getElementById("resetBtn");
+  //       let result = document.getElementById("score");
+  //       let msg = document.getElementById("message");
 
-btn1.addEventListener("click", function() {
-  heading.innerHTML = "JavaScript is Successfully Connected!";
-});
+  //       btn.addEventListener("click", function() {
+  //           score++;
+  //           result.innerText = "Score: "+ score;
+  //           if(score >= 10) {
+  //               msg.innerText = "You Won";
+  //               msg.style.backgroundColor="red"
+  //           }
+  //           else {
+  //               msg.innerText = "Keep Clicking!";
+  //           }
+  //       });
 
-btn2.addEventListener("click", function() {
-  heading.style.color = "crimson";
-  heading.style.backgroundColor = "#ffe6e6";
-});
+  //       reset.addEventListener("click", function() {
+  //           score = 0;
+  //           result.innerText = "Score: 0";
+  //           msg.innerText = "Ready?";
+  //       });
 
-btn3.addEventListener("click", function() {
-  output.innerHTML = "You have learned how to connect JavaScript with HTML!";
-  btn3.style.width="100px"
-  btn3.style.height="100px"
-  btn3.style.backgroundColor="#db8888"
-});
+        let btn = document.getElementById("btn");
+        let count = 0;
+        btn.addEventListener("click", function() {
+            if(count == 0) {
+                document.body.style.backgroundColor = "red";
+                count = 1;
+            }
+            else {
+                document.body.style.backgroundColor = "blue";
+                count = 0;
+            }
 
-btn4.addEventListener("click",function(){
-    heading.style.fontSize="50px";
-});
-
-console.log(output)
-console.log(btn1)
-console.log(btn4)
-console.log(btn5)
-console.log(btn6)
-btn1.innerHTML="clicked"
-btn3.style.borderColor="red"
-btn3.style.backgroundColor="cyan"
+        });

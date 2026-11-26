@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation Playground</title>
+
+    <style>
+        body {
+            text-align: center;
+            background: #111;
+            color: white;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background: purple;
+            margin: 60px auto;
+            border-radius: 15px;
+            position: relative;
+            transition: 0.5s;
+            left: 0;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+    <button id="move">Move</button>
+    <button id="rotate">Rotate</button>
+    <button id="color">Color</button>
+    <button id="size">Resize</button>
+    <button id="reset">Reset</button>
+
+    <script>
+
+        let box = document.getElementById("box");
+
+        let move = document.getElementById("move");
+        let rotate = document.getElementById("rotate");
+        let color = document.getElementById("color");
+        let size = document.getElementById("size");
+        let reset =document.getElementById("reset");
+        let m = 0;
+        let r = 0;
+        let c = 0;
+        let s = 0;
+
+        move.addEventListener("click", function() {
+            m++;
+
+            box.style.left = m % 2 == 0?"0px":"150px";
+        });
+
+        rotate.addEventListener("click", function() {
+            r += 90;
+            box.style.transform = "rotate(" + r + "deg)";
+        });
+
+        color.addEventListener("click", function() {
+            c++;
+
+            if(c % 2 == 0) {
+                box.style.backgroundColor = "purple";
+            }
+            else {
+                box.style.backgroundColor = "pink";
+            }
+        });
+
+        size.addEventListener("click", function() {
+            s++;
+
+            if(s % 2 == 0) {
+                box.style.width = "100px";
+                box.style.height = "100px";
+            }
+            else {
+                box.style.width = "180px";
+                box.style.height = "180px";
+            }
+        });
+
+        reset.addEventListener("click", function() {
+            box.style.left = "0px";
+            box.style.top = "0px";
+            box.style.transform = "rotate(0deg)";
+            box.style.backgroundColor = "purple";
+            box.style.width = "100px";
+            box.style.height = "100px";
+            m = 0;
+            r = 0;
+            c = 0;
+            s = 0;
+        });
+
+    </script>
+
+</body>
+</html>

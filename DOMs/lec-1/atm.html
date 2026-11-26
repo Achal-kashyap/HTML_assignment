@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Simulator</title>
+</head>
+<body>
+    <h1>atm</h1>
+    <h2 id="balance">Balance: ₹5000</h2>
+    <input type="number" id="amount" placeholder="Enter Amount">
+    <br><br>
+    <button id="deposit">Deposit</button>
+    <button id="withdraw">Withdraw</button>
+    <button id="check">Check Balance</button>
+    <h3 id="message">Welcome to ATM</h3>
+    <script>
+        let balance=5000;
+        let amount=document.getElementById("amount");
+        let deposit=document.getElementById("deposit");
+        let withdraw=document.getElementById("withdraw");
+        let check=document.getElementById("check");
+        let bal=document.getElementById("balance");
+        let msg=document.getElementById("message");
+        deposit.addEventListener("click", function() {
+            let money = Number(amount.value);
+            if(money <= 0) {
+                msg.innerText = "Enter valid amount!";
+            }
+            else {
+                balance += money;
+                bal.innerText = "Balance: ₹" + balance;
+                msg.innerText = "Money Deposited Successfully!";
+            }
+            amount.value = "";
+        });
+        withdraw.addEventListener("click", function() {
+            let money = Number(amount.value);
+            if(money <= 0) {
+                msg.innerText = "Enter valid amount!";
+            }
+            else if(money > balance) {
+                msg.innerText = "Insufficient Balance!";
+            }
+            else {
+                balance -= money;
+                bal.innerText = "Balance: ₹" + balance;
+                msg.innerText = "Withdrawal Successful!";
+            }
+            amount.value = "";
+        });
+        check.addEventListener("click", function() {
+            bal.innerText = "Balance: ₹" + balance;
+            msg.innerText = "Your Current Balance";
+        });
+    </script>
+</body>
+</html>
